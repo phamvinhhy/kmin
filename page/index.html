@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 
+  <title>FOOD</title>
+  
+  <link rel="stylesheet" href="../css/layout.css" /> 
+  <!-- <link rel="stylesheet" href="../css/responsive.css "/> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  
+</head>
+<body>
+  <nav></nav>
+  <main>
+    <div class="slider">
+     
+      <div id="top">
+        <div class="w3-content w3-section" style="max-width:100vw">
+          <img class="mySlides" src="../img/banner1.jpg" style="width:100%">
+          <img class="mySlides" src="../img/58.jpg" style="width:100%">
+          <img class="mySlides" src="../img/57.jpg" style="width:100%">
+          <img class="mySlides" src="../img/vh2.jpg" style="width:100%">
+        </div>
+        <script>
+          var myIndex = 0;
+          carousel();
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) 
+            { 
+              myIndex = 1 
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+        </script>
+        <div class="logo"></div>
+        <div class="title"><h2> DELICIOUS <strong style="color:lawngreen">&</strong> AUTHENTIC<br />
+                            <span>CUISINE</span></h2></div>
+        <button class="order"><h4>ORDER ONLINE</h4></button>
+      </div>
+    </div>
+    
+    <div class="welcome">
+      <div class="welcome-bg">
+        <br /><br />
+        <h2>WELCOME!</h2>
+        <h3>MASAGNI DOLORES EOQUIE VOLQUE PORFASERTAS KERTYUAS MIERTASE BERYIUAS ESTQUIOEM IPSUMQUIA DOLORE</h3>
+        <h4>
+          Sitamet consectet, adipisci uumquam eius modi tempora incidunt, ut
+          labore et dolore magnam. Baliquamaerat voluptaut enim ad minima
+          veniam, quis nostrum exercitationem ullam corporis suscipit
+          laboriosam, nisi ut aliquid ex ea commodi conse quatur. Autem vel eum
+          iure reprehenderit, qui a voluptate nertyaesra. Cerelit esse, quam
+          nihil molestiae murtasa kertyas. consequatur, vel illum, qui dolorem
+          eum fugiat, quo voluptas nulla pariatur.
+        </h4>
+      </div>
+    </div>
+    
+    <div class="food1">
+      <div class="food1-bg">
+        <br />
+        <h1>OUR FOOD TO MAKE </br>YOU FEEL GOOD!</h1>
+        <h6>Sitamet consectet, adipisci uumquam eius modi tempora incidunt, ut labore et dolore magnam.
+          Baliquamaerat miuyas voluptaut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+          laboriosam,nisi ut aliquid ex ea commodise consequatur. Autem vel eum iure reprehenderit, qui a voluptate nertyaesra.
+        </h6>
+        <button>LEARN MORE</button>
+      </div>
+    </div>
+    
+    <div class="menu_food">
+      <h1 style=" font-family:Comic Sans MS">FEATURED MENU</h1><br>
+      <span style=" font-family:Comic Sans MS">IPSUMQUIA DOLORE RTASE BERYIUASE MASAGNI DOLORES EOQUIE VOLQUE PORFASERTAS KERTYUAS MIEESTQUIOEM </span>
+      
+          <div class="menu_con1">
+            <p> Northern</p>
+            <a href="http://127.0.0.1:5500/page/chitiet.html">
+              <img src="../img/bac.jpg" style="height: 40vh;" alt=""></a>
+            </div>
+        
+            <div class="menu_con2">
+            <p>Central</p>
+            <img src="../img/trung.jpg" style="height: 40vh;" alt="">mien_trung</div>
+        
+            <div class="menu_con3">
+            <p>southern</p>
+            <img src="../img/nam.jpg" style="height: 40vh;" alt="">mien_nam</div>
+           </div>
+    <div class="food2">
+      <br>
+      <h1 style=" font-family: Lobster, serif;">HAPPY HOUR DAILY <br> 4-7 P.M. </h1>
+      <h6>Cerabore et dolore magnam. Baliquamaerat miuyas tamet conse ctet,</h6>
+      <h6>
+        adipisci uumquam eius modi tempora incidunt, ut voluptaut enim ad </h6>
+      <h6>minima vietnam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</h6>
+    </div>
+    
+    <div class="event">
+      <p><b>NEWS & EVENTS</b></p>
+      <h6>RTASE BERYIUASE MASAGNI DOLORES EOQUIE VOLQUE PORFASERTAS KERTYUAS MIEESTQUIOEM IPSUMQUIA DOLORE</h6>
+      
+      <div class="grid-container">
+        <div class="item1" style="margin: auto auto; width: 150px">
+          <h3 style="font-size: 70px;font-weight: lighter">20 </h3><span>JUNE</span>
+        </div>
+
+        <div class="item2" style="margin-right:30px;">
+          <h4 style="color:rgb(20, 110, 20)">VINTUR MAGNO SATESES</h4><br>
+          <span style="font-size: 20px">certa baditaut onquser kisreras feate msequi nesciunt. Niques porroisq umquam
+            eiumodi tempora ncidunt. </span>
+        </div>
+
+        <div class="item3" style=" margin: auto auto;width: 150px">
+          <h3 style="font-size: 70px;font-weight: lighter">21 </h3><span>JUNE</span>
+        </div>
+
+        <div class="item4" style="margin-right:30px;">
+          <h4 style="color:rgb(20, 110, 20)">KERTADITAUT SER KAYTSRERA</h4><br>
+          <span style="font-size: 20px"> untur magni dolores eoquie asena voluptate msequi nesciunt. Niques porroisquam
+            umquam eiumodi liuyas verpora. </span>
+        </div>
+
+        <div class="item5" style="margin: auto auto;width: 150px">
+          <h3 style="font-size: 70px;font-weight: lighter">22 </h3><span>JUNE</span>
+        </div>
+
+        <div class="item6" style="margin-right:30px;">
+          <h4 style="color:rgb(20, 110, 20)">VINTUR MAGNO SATESES</h4><br>
+          <span style="font-size: 20px">certa baditaut onquser kisreras feate msequi nesciunt. Niques porroisq umquam
+            eiumodi tempora ncidunt. </span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="icon">
+      <div class="note"><i class="far fa-hand-point-right"></i></div>
+      <ul>
+        <li class="icon1"> <a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="icon2"><a href="#"><i class="fab fa-skype"></i></a></li>
+        <li class="icon3"><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    
+    <footer>
+      <div id="bottom">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3371.87961621132!2d106.6732878199716!3d10.764327351228427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee1f2f1b425%3A0x4c1360716bc16c7!2zMzY4LCAzOTMvMjkgTMOqIEjhu5NuZyBQaG9uZywgcGjGsOG7nW5nIDIsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1557410451924!5m2!1svi!2s"
+          width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+          <div class="footer-video">
+            <iframe width="40%" height="315" src="https://www.youtube.com/embed/M2o-AnFChT4" frameborder="0"
+              allow="controls autoplay; accelerometer;  encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+      </div>
+    </footer>
+    <a id="toTop" href="#top" style="display: block;"></a>
+    <a id="tobottom" href="#bottom" style="display: block;"></a> <br>
+    <div style="text-align: left;display: inline;">Project 1 | 18/7/2019</div>
+    <div style="text-align: right;display: inline;padding-left: 46em ">DELICIOUS ©  AUTHENTIC 2019 by  <a href="https://www.facebook.com/profile.php?id=100007225935605">Hy Hy | Phone: <a href="tel:+8466240243"> 0366 240 243</a></a> </div>
+  </main>
+ 
+ </body>
+</html>

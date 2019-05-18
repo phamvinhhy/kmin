@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>chi tiết món ăn</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: url(../img/nen_ct.jpg);
+    }
+    .card {
+      float: left;
+
+      position: relative;
+      width: 22%;
+      height: 400px;
+      background: #262626;
+      overflow: hidden;
+      margin: 50px 15px 15px 22px;
+      box-shadow: 10px 10px 10px 10px black;
+      overflow: hidden;
+    }
+    img {
+      width: 400px;
+      height: 400px;
+    }
+    p {
+      font-size: 24px;
+    }
+    input,
+    .togg {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+      outline: none;
+      z-index: 10;
+    }
+    input {
+      opacity: 0;
+    }
+    .togg {
+      /* pointer-events: none; */
+      border-radius: 50%;
+      background: #fff;
+      transition: 0.5s;
+      text-align: center;
+      line-height: 50px;
+      font-size: 36px;
+      box-shadow: 0 0 0 0px #9c27b0;
+    }
+    input:checked ~ .togg {
+      box-shadow: 0 0 0 500px #9c27b0;
+      transform: rotate(360deg);
+    }
+    .content {
+      position: absolute;
+      color: white;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      padding: 20px;
+      box-sizing: border-box;
+      z-index: 11;
+      /* pointer-events: none; */
+      transition: 0.5s;
+      opacity: 0;
+    }
+    input:checked ~ .content {
+      opacity: 1;
+    }
+    .footer > a {
+      color: white;
+      font-size: 30px;
+      float: right;
+      padding: 30px;
+    }
+    a:hover {
+      color: rgb(20, 23, 209);
+    }
+  </style>
+  <body>
+    <h1
+      style=" font-size: 80px; color:white;font-family:Comic Sans MS;text-align: center"
+    >
+      Vietnamese culture & cuisine
+    </h1>
+    <div class="card">
+      <input type="checkbox" name=" " />
+      <div class="togg">+</div>
+      <div class="img">
+        <img src="../img/14.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h1 style="text-align: center">Bánh Xèo</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et error
+          necessitatibus dicta nemo quisquam tempore non, minus earum! Maxime
+          nostrum repudiandae, sequi consectetur velit obcaecati praesentium
+          quidem eos. Maiores, ad!
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <input type="checkbox" name=" " />
+      <div class="togg">+</div>
+      <div class="img">
+        <img src="../img/17.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h1 style="text-align: center">Phở</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et error
+          necessitatibus dicta nemo quisquam tempore non, minus earum! Maxime
+          nostrum repudiandae, sequi consectetur velit obcaecati praesentium
+          quidem eos. Maiores, ad!
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <input type="checkbox" name=" " />
+      <div class="togg">+</div>
+      <div class="img">
+        <img src="../img/15.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h1 style="text-align: center">Bánh Bèo</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et error
+          necessitatibus dicta nemo quisquam tempore non, minus earum! Maxime
+          nostrum repudiandae, sequi consectetur velit obcaecati praesentium
+          quidem eos. Maiores, ad!
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <input type="checkbox" name=" " />
+      <div class="togg">+</div>
+      <div class="img">
+        <img src="../img/19.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h1 style="text-align: center">Bánh cuốn</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et error
+          necessitatibus dicta nemo quisquam tempore non, minus earum! Maxime
+          nostrum repudiandae, sequi consectetur velit obcaecati praesentium
+          quidem eos. Maiores, ad!
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <a href="http://127.0.0.1:5500/page/index.html">về trang chủ</a>
+      </div>
+    </footer>
+  </body>
+</html>

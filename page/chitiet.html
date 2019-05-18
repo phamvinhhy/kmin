@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>menu</title>
+  </head>
+  <script>
+    function myFunction() {
+      location.replace("http://127.0.0.1:5500/page/thongtin.html");
+    }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: url(../img/nen_ct.jpg) no-repeat;
+      background-size: cover;
+    }
+    .menu_bia img {
+      width: 30%;
+      height: 600px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 25% 20px 35%;
+      box-shadow: 10px 10px 20px 20px black;
+      position: relative;
+      animation-fill-mode: forwards;
+    }
+    h1 {
+      font-size: 40px;
+      color: white;
+      position: absolute;
+      top: 80px;
+      margin-left: 36.9%;
+    }
+
+    @keyframes sang_trang {
+      0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+      }
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+      }
+    }
+  </style>
+  <body>
+    <div class="menu_bia" onclick="myFunction()">
+      <div class="back-content">
+        <img src="../img/chitiet1.jpg" alt="" />
+        <h1 style=" font-family:Comic Sans MS;">FEATURED MENU</h1>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

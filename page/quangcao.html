@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>loading</title>
+  </head>
+  <script>
+    function myFunction() {
+      location.replace("http://127.0.0.1:5500/page/");
+    }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+  
+    #data-load {
+      
+      animation: example 4s;
+      width: 700px;
+      height: 600px;
+      background: url(../img/quangcao.jpg);
+      background-size: cover;
+      margin-top: 25px;
+      left: 25%;
+      position: absolute;
+      z-index: 999;
+      box-shadow: 10px 10px 20px 10px black ;
+     
+     
+    }
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+    }
+
+    .obj {
+      width: 8px;
+      height: 40px;
+      background: rgb(250, 249, 249);
+      margin: 0 3px;
+      border-radius: 10px;
+      -ms-animation: loading 0.8s infinite;
+      -moz-animation: loading 0.8s infinite;
+      -webkit-animation: loading 0.8s infinite;
+      animation: loading 0.8s infinite;
+      display: flex;
+      align-items: center;
+      -ms-transform: translate(-50% -50%);
+      -moz-transform: translate(-50% -50%);
+      -webkit-transform: translate(-50% -50%);
+      transform: translate(-50% -50%);
+    }
+
+    img {
+      display: block;
+      width: 30px;
+      height: 20px;
+     
+     
+
+    }
+    @keyframes example {
+      0% {
+        background: black;
+        opacity: 0.2;
+        
+      }
+      25% {
+        display: none;
+        opacity: 0.4;
+      }
+      50% {
+        opacity: 0.6;
+        display: none;
+      }
+      75% {
+        display: none;
+        opacity: 0.8;
+      }
+      100% {
+        display: none;
+        opacity: 1.5;
+     
+
+      }
+    }
+   
+    .obj:nth-child(2) {
+      animation-delay: 0.1s;
+      -ms-animation-delay: 0.1s;
+      -moz-animation-delay: 0.1s;
+      -webkit-animation-delay: 0.1s;
+    }
+    .obj:nth-child(3) {
+      animation-delay: 0.2s;
+      -ms-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+      -webkit-animation-delay: 0.2s;
+    }
+    .obj:nth-child(4) {
+      animation-delay: 0.3s;
+      -ms-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      -webkit-animation-delay: 0.3s;
+    }
+    .obj:nth-child(5) {
+      animation-delay: 0.4s;
+      -ms-animation-delay: 0.4s;
+      -moz-animation-delay: 0.4s;
+      -webkit-animation-delay: 0.4s;
+    }
+    .obj:nth-child(6) {
+      animation-delay: 0.5s;
+      -ms-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s;
+    }
+    .obj:nth-child(7) {
+      animation-delay: 0.6s;
+      -ms-animation-delay: 0.6s;
+      -moz-animation-delay: 0.6s;
+      -webkit-animation-delay: 0.6s;
+    }
+    .obj:nth-child(8) {
+      animation-delay: 0.7s;
+      -ms-animation-delay: 0.7s;
+      -moz-animation-delay: 0.7s;
+      -webkit-animation-delay: 0.7s;
+    }
+    @keyframes loading {
+      0% {
+        height: 0;
+        display: none;
+        
+      }
+      50% {
+        height: 40px;
+        display: none;
+      }
+      100% {
+        height: 0;
+        opacity: 0.3;
+      }
+    }
+    .slider {
+  background: lightcoral;
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 7px;
+  opacity: 0.4;
+  
+}
+.slider img {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  opacity: 1;
+}
+.logo {
+  background: url("../img/logo3.jpg") rgb(228, 40, 40);
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  border-radius: 50%;
+  top: 7%;
+  left: 42%;
+  border: 7px solid white;
+}
+.title {
+  font-size: 40px;
+  font-family: sans-serif;
+  bottom: 40%;
+  position: absolute;
+  left: 20%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+}
+.title span {
+  left: 33%;
+  position: absolute;
+}
+button {
+  border: none;
+  background: rgb(207, 47, 47);
+  height: 70px;
+  font-size: 20px;
+  color: aliceblue;
+  bottom: 10%;
+  left: 45%;
+  position: absolute;
+  border-radius: 5px 20px 5px 20px;
+  box-shadow: 0 0 30px white;
+}
+
+.order h4 {
+  margin: auto auto;
+}
+button:hover {
+  background: white;
+  color: rgb(218, 38, 38);
+}
+  </style>
+  <body>
+      <main>
+          <div id="data-load" onclick="myFunction()">
+               <img  src="../img/cancel.jpg" alt=""/>
+              <div class="loading">
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+                <div class="obj"></div>
+              </div>
+            </div>
+          <div class="slider">
+              
+            <div id="top">
+              <div class="w3-content w3-section" style="max-width:100vw">
+                <img class="mySlides" src="../img/banner1.jpg" style="width:100%">
+                <img class="mySlides" src="../img/58.jpg" style="width:100%">
+                <img class="mySlides" src="../img/57.jpg" style="width:100%">
+                <img class="mySlides" src="../img/vh2.jpg" style="width:100%">
+              </div>
+              <script>
+                var myIndex = 0;
+                carousel();
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) 
+                  { 
+                    myIndex = 1 
+                  }
+                  x[myIndex - 1].style.display = "block";
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+              </script>
+              <div class="logo"></div>
+              <div class="title"><h2> DELICIOUS <strong style="color:lawngreen">&</strong> AUTHENTIC<br />
+                                  <span>CUISINE</span></h2></div>
+              <button class="order"><h4>ORDER ONLINE</h4></button>
+            </div>
+          </div>
+          
+    
+  </body>
+</html>
